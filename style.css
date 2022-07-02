@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.gameContainer{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+.grid{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.buttonContainer > button{
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin: 10px;
+}
+header{
+    text-align-last: center;
+    font-size: 50px;
+}
+.picker{
+    text-align-last: center;
+    font-size: 25px;
+}
+.selected{
+    background-color: black;
+    color: white;
+}
+.winLine{
+    font-size: 35px;
+    text-align: center;
+
+}
+.reset{
+    border-radius: 5px;
+    width: 100px;
+    height: auto;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
